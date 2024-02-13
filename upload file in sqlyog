@@ -1,6 +1,7 @@
+## LOAD file in sqlyog
 LOAD DATA LOCAL INFILE  "patch file.... "
 INTO TABLE table_name
 FIELDS TERMINATED BY ','
-ENCLOSED BY ','
-LINES TERMINATED BY '\r\n'
+ENCLOSED BY ',' -- Optional
+LINES TERMINATED BY '\r\n' --check in notepad if its CRLF then '\r\n' and its other then '\r'
 IGNORE 1 LINES
